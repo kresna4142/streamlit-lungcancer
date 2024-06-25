@@ -61,9 +61,30 @@ if st.button('Test Prediksi Kanker Paru-Paru'):
                                            categorical_mapping[Coughing],categorical_mapping[Shortness],categorical_mapping[Swallow],categorical_mapping[Chest]]])
     if(lungcancer_prediction[0] == 1):
         lungcancer_diagnonis = 'Pasien terkena Kanker Paru-Paru'
-        st.success(lungcancer_diagnonis)
+        st.error(lungcancer_diagnonis)
     else :
         lungcancer_diagnonis = 'Pasien tidak terkena Kanker Paru-Paru'
-        st.error(lungcancer_diagnonis)
+        st.success(lungcancer_diagnonis)
+
+# Footer
+st.markdown("---")
+footer = """
+    <style>
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: White;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+    <div class="footer">
+        © 2024 Hamman Khadafi Al Habibie 21.11.4164
+    </div>
+"""
+#menyisipkan css
+st.markdown(footer, unsafe_allow_html=True)
+
     
     
