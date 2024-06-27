@@ -80,7 +80,7 @@ footer = """
     }
     </style>
     <div class="footer">
-        © 2024 Hamman Khadafi Al Habibie 21.11.4164
+        © 2024 Karisma Septa Kresna 21.11.4142
     </div>
 """
 #menyisipkan css
